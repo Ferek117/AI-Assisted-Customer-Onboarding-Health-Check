@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33034391/README.md)
 # AI-Assisted Customer Onboarding Health Check
 
 ## What I built
