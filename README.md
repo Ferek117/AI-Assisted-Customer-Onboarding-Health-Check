@@ -1,37 +1,47 @@
-AI-Assisted Customer Onboarding Health Check
-What I built
+[README.md](https://github.com/user-attachments/files/33034391/README.md)
+# AI-Assisted Customer Onboarding Health Check
+
+## What I built
 A lightweight no-code workflow that uses an LLM to review a customer onboarding snapshot and produce a structured health check for a Customer Success Manager. The goal is not to let AI make the decision; it is to help the CSM spot risk signals, missing information, and next actions faster.
-Why I built it
+
+## Why I built it
 Customer onboarding data is often spread across notes, CRM fields, implementation updates, and support issues. A CSM can lose time reconstructing the situation before deciding what to do next. This project tests whether AI can create a useful first-pass review while keeping the human responsible for validation and action.
-Inputs
+
+## Inputs
 The workflow takes a small structured record containing:
-Customer / segment
-Days since kickoff
-Target go-live date
-Current milestone
-Open blockers
-Product usage / activation signal
-Training status
-Stakeholder engagement
-Support issues
-CSM notes
-AI prompt
+- Customer / segment
+- Days since kickoff
+- Target go-live date
+- Current milestone
+- Open blockers
+- Product usage / activation signal
+- Training status
+- Stakeholder engagement
+- Support issues
+- CSM notes
+
+## AI prompt
 The model is asked to:
-Summarize current onboarding status in 3 bullets.
-Flag risk signals and explain the evidence for each one.
-Identify missing information that prevents a confident assessment.
-Recommend the next 3 actions, assigning a suggested owner and urgency.
-Draft a short customer-facing follow-up that does not invent facts.
-Return a confidence level and explicitly separate facts from inference.
-Human review rule
+1. Summarize current onboarding status in 3 bullets.
+2. Flag risk signals and explain the evidence for each one.
+3. Identify missing information that prevents a confident assessment.
+4. Recommend the next 3 actions, assigning a suggested owner and urgency.
+5. Draft a short customer-facing follow-up that does not invent facts.
+6. Return a confidence level and explicitly separate facts from inference.
+
+## Human review rule
 No AI recommendation is treated as final. The CSM validates every risk flag and action against the source data before contacting the customer or changing an account plan.
-What I learned
+
+## What I learned
 The most useful output was not the summary. It was the missing-information section. Forcing the model to state what it does not know reduces false confidence and makes the review more operationally useful. I also found that structured inputs produce better recommendations than pasting an unstructured block of notes.
-Next iteration
+
+## Next iteration
 I would connect the workflow to a CRM or onboarding platform, add a simple scoring rubric for time-to-first-value and stakeholder engagement, and compare AI-generated risk flags against actual CSM decisions over time.
-Tools
-ChatGPT / LLM
-Spreadsheet-style structured input
-Human validation
-Sample data
+
+## Tools
+- ChatGPT / LLM
+- Spreadsheet-style structured input
+- Human validation
+
+## Sample data
 All example data in this project is synthetic and contains no customer or employer information.
