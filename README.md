@@ -1,4 +1,4 @@
-## walkthrough
+# Walkthrough
 ## README.md
 Explains the project, workflow, and lessons learned.
 
