@@ -1,7 +1,7 @@
 # AI-Assisted Customer Onboarding Health Check
 
 ## What I built
-A lightweight no-code workflow that uses an LLM to review a customer onboarding snapshot and produce a structured health check for a Customer Success Manager. The goal is not to let AI make the decision; it is to help the CSM spot risk signals, missing information, and next actions faster.
+A lightweight no-code workflow small experiment I built to explore how AI can support Customer Success teams. It uses structured customer onboarding information to identify risks, highlight missing context, recommend next actions, and draft a customer follow-up. The workflow is designed to keep human judgment in the loop rather than treating AI output as authoritative.
 
 ## Why I built it
 Customer onboarding data is often spread across notes, CRM fields, implementation updates, and support issues. A CSM can lose time reconstructing the situation before deciding what to do next. This project tests whether AI can create a useful first-pass review while keeping the human responsible for validation and action.
