@@ -1,3 +1,13 @@
+## walkthrough
+## README.md
+Explains the project, workflow, and lessons learned.
+
+## customer_onboarding_prompt.md
+The reusable AI prompt used to evaluate onboarding health.
+
+## sample_customer_data.csv
+Synthetic customer onboarding data used for testing.
+
 # AI-Assisted Customer Onboarding Health Check
 
 ## What I built
@@ -44,13 +54,3 @@ I would connect the workflow to a CRM or onboarding platform, add a simple scori
 
 ## Sample data
 All example data in this project is synthetic and contains no customer or employer information.
-
-##walkthrough
-##README.md
-Explains the project, workflow, and lessons learned.
-
-##customer_onboarding_prompt.md
-The reusable AI prompt used to evaluate onboarding health.
-
-##sample_customer_data.csv
-Synthetic customer onboarding data used for testing.
